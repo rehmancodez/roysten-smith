@@ -103,10 +103,12 @@
   background-color: rgba(247, 198, 0, 1);
 }
 
-.Header {
+.header {
   background-color: black;
   color: white;
   border-radius: 10px;
+  padding: 4px;
+  
 
 }
 
@@ -135,9 +137,9 @@
   max-height: fit-content;
 
   align-items: center;
-  background-color: yellow;
-  border-radius: 20px;
-  color: black;
+  background-color:rgba(247, 198, 0, 1);
+  border-radius: 10px;
+  color: black !important;
   gap: 10px;
   padding: 0px 0px 0px 10px;
 }
@@ -150,7 +152,19 @@
 
 
 }
-
+.board a{
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+}
+.board a:hover{
+  color: black;
+}
+.admin a{
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+}
 .c-admin {
   display: flex;
   max-height: fit-content;
@@ -159,9 +173,13 @@
   background-color: rgb(255, 255, 255);
   border-radius: 20px;
   color: rgb(0, 0, 0);
+  font-size: 16px;
   gap: 10px;
   padding: 0px 0px 0px 10px;
 
+}
+.c-admin h5{
+  font-size: 16px;
 }
 
 .c-admin:hover {
@@ -172,6 +190,7 @@
   background-color: yellow;
   border-radius: 20px;
   color: rgb(0, 0, 0);
+  font-size: 16px;
   gap: 10px;
   padding: 0px 0px 0px 10px;
 }

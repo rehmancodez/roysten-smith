@@ -2,6 +2,7 @@ import logo2 from "../images/logo-h.png"
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+import Header from "./Header";
 
 
 
@@ -34,8 +35,9 @@ function Banner() {
 
     return (
         <>
+       
 
-            <div className="container-fluid Header">
+            {/* <div className="container-fluid Header">
                 <div className="row">
                     <div className="col-lg-6">
                         <img src={logo2}></img>
@@ -50,7 +52,15 @@ function Banner() {
                         </div>
                     </div>
                 </div>
+            </div> */}
+            <div>
+                <Header/>
             </div>
+
+
+
+
+
             <div className="container-fluid pt-2">
                 <div className="row">
                     <div className="col-lg-3 ">
@@ -76,7 +86,7 @@ function Banner() {
                                 <div className="c-1 mt-1">
                                     <i class="fa-solid fa-house"></i>
                                      <h5 className="mt-2">
-                                    <Link to={"/dashboard"}>Menifiest</Link>
+                                    <Link to={"/menifest"}>Menifiest</Link>
                                     </h5>
 
 
@@ -101,48 +111,37 @@ function Banner() {
                             </div>
 
                         </div>
-                                <div className="admin">
-                            <div>
-                                <p>Admin</p>
-                                <div className="c-admin ">
-                                    <i class="fa-solid fa-house"></i>
-                                    <h5 className="mt-2">Home</h5>
+                            <div className="admin">
+                    <div>
+                        <p>Admin</p>
+                        <div className="c-admin ">
+                            <i class="fa-solid fa-house"></i>
+                            <h5 className="mt-2">Account</h5>
 
-
-                                </div>
-                                <div className="c-admin mt-1">
-                                    <i class="fa-solid fa-house"></i>
-                                    <h5 className="mt-2">Home</h5>
-
-
-                                </div>
-                                <div className="c-admin mt-1">
-                                    <i class="fa-solid fa-house"></i>
-                                    <h5 className="mt-2">Home</h5>
-
-
-                                </div>
-                                <div className="c-admin mt-1">
-                                    <i class="fa-solid fa-house"></i>
-                                    <h5 className="mt-2">Home</h5>
-
-
-                                </div>
-                                <div className="c-admin mt-1">
-                                    <i class="fa-solid fa-house"></i>
-                                    <h5 className="mt-2">Home</h5>
-
-
-                                </div>
-                                <div className="c-admin mt-1">
-                                    <i class="fa-solid fa-house"></i>
-                                    <h5 className="mt-2">Home</h5>
-
-
-                                </div>
-                            </div>
 
                         </div>
+                        <div className="c-admin mt-1">
+                            <i class="fa-solid fa-house"></i>
+                            <h5 className="mt-2">Courier</h5>
+
+
+                        </div>
+                        <div className="c-admin mt-1">
+                            <i class="fa-solid fa-house"></i>
+                              <h5 className="mt-2">Billing</h5>
+
+
+                        </div>
+                        <div className="c-admin mt-1">
+                            <i class="fa-solid fa-house"></i>
+                            <h5 className="mt-2">Consignees</h5>
+
+
+                        </div>
+                 
+                    </div>
+
+                </div>
 
 
 

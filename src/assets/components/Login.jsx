@@ -16,8 +16,11 @@ function Login() {
 
 
         navigate("/dashboard");
-       
+
+        localStorage.setItem("email" , JSON.stringify(email));
+       localStorage.setItem("pass" , JSON.stringify(password));
     }
+
     return (
         <>
             <div className="container-fluid login">

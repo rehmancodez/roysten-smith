@@ -1,12 +1,18 @@
 import React, { useState } from 'react';
+import Slider from './Slider';
+import Header from './Header';
 
 function BannerThree(){
       const [packages, setPackages] = useState([]);
     return(
         <>
+        <header>
+          <Header/>
+        </header>
         <div className="container-fluid">
             <div className="row">
                 <div className="col-lg-3">
+                <Slider/>
 
                 </div>
                 <div className="col-lg-9">
