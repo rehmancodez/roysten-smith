@@ -3,7 +3,7 @@ import { Routes, Route, BrowserRouter } from "react-router-dom";
 
 
 
-import Home from "./assets/home"
+import Home from "./assets/Home"
 import Dashboard from "./assets/Dashboard";
 import Collection from "./assets/Collection";
 import Menifiest from "./assets/Menifest";
